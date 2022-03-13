@@ -24,6 +24,9 @@ public class TesteLista {
 		System.out.println(L1.contNodos() + " nodos");
 		L1.inserirFinal(7);
 		System.out.println(L1.mostraLista());
+		
+		L1.inserirFinal(11);
+		System.out.println(L1.mostraLista());
 	}
 
 }

@@ -65,14 +65,14 @@ public class ListaEncadeada {
 	}
 	
 	public void inserirFinal(int dado) {
-		Nodo aux = fim;
+		Nodo novoNodo = new Nodo(dado);
+		Nodo aux = inicio;
 		
-		if(aux.getProx() == null) {
-			Nodo novoNodo = new Nodo(dado);
-			novoNodo.setProx(fim);
-			fim = novoNodo;
+		while(aux.getProx() != null){
+			aux = aux.getProx(); //Aux verifica se tem null ou não
 		}
-		 jvhvhgcg
+		aux.setProx(novoNodo);
+
 	}
 	
 }
