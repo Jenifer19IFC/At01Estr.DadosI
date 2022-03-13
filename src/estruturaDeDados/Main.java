@@ -1,4 +1,6 @@
 package estruturaDeDados;
+import java.time.LocalDate;
+import java.util.Calendar;
 import java.util.Scanner;
 
 public class Main {
@@ -8,8 +10,9 @@ public class Main {
 		Scanner input = new Scanner(System.in);
 		
 		int aux;
+		int d, m, a;
 		
-		//1 –Verificar se um número é um CPF válido.
+		/*//1 –Verificar se um número é um CPF válido.
 		
 		ValidarCpf cpf = new ValidarCpf();
 		
@@ -46,6 +49,14 @@ public class Main {
 		aux = input.nextInt();
 		
 		System.out.println(np.validarNumPrimo(aux));
+		*/
+		
+		//3
+		
+		Calendar c = Calendar.getInstance();
+		System.out.println(c.isSet(Calendar.DAY_OF_MONTH));
+		
+		
 		
 	}
 
