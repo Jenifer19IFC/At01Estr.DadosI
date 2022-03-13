@@ -74,8 +74,7 @@ public class ListaEncadeada {
 		aux.setProx(novoNodo);// Quando o Prox for NULL ---> Adiciona elemento no final
 	}
 	
-	public void deletarPrimeiroNodo() {
-		Nodo aux = inicio; 
+	public void deletarPrimeiroNodo() { 
 		inicio.getDado();
 		inicio = inicio.getProx(); //Inicio é o próximo -- AÇÃO DE TROCAR O INÍCIO --
 	}

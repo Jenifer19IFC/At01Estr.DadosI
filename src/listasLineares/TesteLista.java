@@ -35,6 +35,10 @@ public class TesteLista {
 		
 		L1.deletarPrimeiroNodo();
 		System.out.println(L1.mostraLista());
+		
+		
+		
+		
 	}
 	
 }
