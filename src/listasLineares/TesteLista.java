@@ -21,12 +21,20 @@ public class TesteLista {
 		//L1.deleteComValor(8);
 		//System.out.println(L1.mostraLista());
 		
-		System.out.println(L1.contNodos() + " nodos");
-		L1.inserirFinal(7);
+		//System.out.println(L1.contNodos() + " nodos");
+		//L1.inserirFinal(7);
+		//System.out.println(L1.mostraLista());
+		
+		//L1.inserirFinal(11);
+		//L1.inserirFinal(34);
+		//System.out.println(L1.mostraLista());
+		
+		System.out.println("Deletar primeiro:\n");
+		L1.deletarPrimeiroNodo();
 		System.out.println(L1.mostraLista());
 		
-		L1.inserirFinal(11);
+		L1.deletarPrimeiroNodo();
 		System.out.println(L1.mostraLista());
 	}
-
+	
 }

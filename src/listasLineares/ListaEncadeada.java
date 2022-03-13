@@ -71,8 +71,12 @@ public class ListaEncadeada {
 		while(aux.getProx() != null){
 			aux = aux.getProx(); //Aux verifica se tem null ou não
 		}
-		aux.setProx(novoNodo);
-
+		aux.setProx(novoNodo);// Quando o Prox for NULL ---> Adiciona elemento no final
 	}
 	
+	public void deletarPrimeiroNodo() {
+		Nodo aux = inicio; 
+		inicio.getDado();
+		inicio = inicio.getProx(); //Inicio é o próximo -- AÇÃO DE TROCAR O INÍCIO --
+	}
 }
