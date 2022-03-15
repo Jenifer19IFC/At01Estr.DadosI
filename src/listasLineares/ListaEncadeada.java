@@ -78,4 +78,19 @@ public class ListaEncadeada {
 		inicio.getDado();
 		inicio = inicio.getProx(); //Inicio é o próximo -- AÇÃO DE TROCAR O INÍCIO --
 	}
+	
+	public void deletarFinal() {
+		Nodo aux = inicio;
+		
+		if(inicio == null) return;
+		
+		while(aux.getProx() != null) {
+			if(aux.getProx().getProx() == null) {
+				aux.setProx(null);
+				return;
+			}
+		aux = aux.getProx();
+		}
+	} //deletarFinal
+	
 }

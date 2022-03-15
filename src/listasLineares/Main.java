@@ -24,7 +24,7 @@ public class Main {
 		int valorNodo3 = nodo2.getProx().getDado();
 		System.out.println(valorNodo3);
 		
-		
+	
 		
 		
 		
