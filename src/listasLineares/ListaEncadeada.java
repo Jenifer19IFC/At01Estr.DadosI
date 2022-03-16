@@ -56,7 +56,7 @@ public class ListaEncadeada {
 		Nodo aux = inicio; 
 		int c = 0;
 		
-		while(aux!=null) {
+		while(aux != null) {
 			lista+= aux.getDado()+"\n";
 			aux = aux.getProx(); 
 			c++;
@@ -92,5 +92,19 @@ public class ListaEncadeada {
 		aux = aux.getProx();
 		}
 	} //deletarFinal
+	
+	public String contPosicao(int valor) {
+		Nodo aux = inicio; 
+		int c = 0;
+		
+		while(aux != null) {
+			if(aux.getDado() == valor) { 
+				return "Encontrado na posição " + c + "";
+			}
+		c++;
+		aux = aux.getProx(); 
+		}
+		return "Não encontrado"; 
+	}
 	
 }
