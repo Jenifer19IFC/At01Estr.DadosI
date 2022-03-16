@@ -40,10 +40,7 @@ public class TesteLista {
 		L1.deletarFinal();
 		System.out.println(L1.mostraLista());
 		
-		System.out.println("Contar ");
-		System.out.println(L1.contPosicao(10));
-		
-		System.out.println(L1.contPosicao(11));
+		System.out.println(L1.contPosicao(12));
  	}
 	
 }

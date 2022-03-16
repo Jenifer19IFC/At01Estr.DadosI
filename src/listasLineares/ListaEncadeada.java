@@ -99,12 +99,12 @@ public class ListaEncadeada {
 		
 		while(aux != null) {
 			if(aux.getDado() == valor) { 
-				return "Encontrado na posição " + c + "";
+				return "Valor " + valor + " encontrado na posição " + c + "";
 			}
 		c++;
 		aux = aux.getProx(); 
 		}
-		return "Não encontrado"; 
+		return "Valor " + valor + " não encontrado"; 
 	}
 	
 }
