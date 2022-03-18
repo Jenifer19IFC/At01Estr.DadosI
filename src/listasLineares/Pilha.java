@@ -31,5 +31,18 @@ public class Pilha {
 	
 	//POP - Deletar no início
 	
+	public void pop() {
+		if(!estaVazio()) { //Quero que seja falso
+			System.out.println(topo.getDado() + " foi retirado da pilha");
+			topo = topo.getProx();
+			tamanho--;
+		}
+		else {
+			System.out.println("Pilha está vazia");
+		}
+	}
 	
+	public int getTopo() {
+		return topo.getDado();
+	}
 }
