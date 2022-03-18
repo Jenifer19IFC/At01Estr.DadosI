@@ -40,7 +40,13 @@ public class TesteLista {
 		L1.deletarFinal();
 		System.out.println(L1.mostraLista());
 		
-		System.out.println(L1.contPosicao(12));
+		System.out.println(L1.contPosicao(0));
+		
+		//PROFESSOR
+		L1.deletarUltimo();
+		System.out.println(L1.mostraLista());
+		
+		System.out.println(L1.buscarValor(0));
  	}
 	
 }

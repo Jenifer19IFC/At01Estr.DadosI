@@ -72,12 +72,30 @@ public class ListaEncadeada {
 			aux = aux.getProx(); //Aux verifica se tem null ou não
 		}
 		aux.setProx(novoNodo);// Quando o Prox for NULL ---> Adiciona elemento no final
+		//Campo de modificação
 	}
 	
 	public void deletarPrimeiroNodo() { 
-		inicio.getDado();
+		if(inicio == null) return;
 		inicio = inicio.getProx(); //Inicio é o próximo -- AÇÃO DE TROCAR O INÍCIO --
 	}
+	
+	//PROFESSOR 
+	public void deletarUltimo() {
+		Nodo aux = inicio;
+		Nodo anterior = null;
+		if(inicio == null) return;
+		if(inicio.getProx() == null) {
+			inicio = null;
+			return;
+		}
+		while(aux.getProx()!= null) {
+			anterior = aux;
+			aux = aux.getProx();
+		}
+		anterior.setProx(null);
+	}
+	
 	
 	public void deletarFinal() {
 		Nodo aux = inicio;
@@ -105,6 +123,21 @@ public class ListaEncadeada {
 		aux = aux.getProx(); 
 		}
 		return "Valor " + valor + " não encontrado"; 
+	}
+	
+	//PROFESSOR
+	public int buscarValor(int valor) {
+		Nodo aux = inicio;
+		int posicao = 0;
+		
+		while(aux != null) {
+			posicao++;
+			if(aux.getDado() == valor) {
+				return posicao;
+			}
+			aux = aux.getProx();
+		}
+		return -1;
 	}
 	
 }
