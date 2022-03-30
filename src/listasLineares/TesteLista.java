@@ -8,7 +8,7 @@ public class TesteLista {
 		
 		Scanner input = new Scanner(System.in);
 		
-		/*ListaEncadeada L1 = new ListaEncadeada(0);
+		ListaEncadeada L1 = new ListaEncadeada(0);
 
 		L1.inserirInicio(8);
 		L1.inserirInicio(1);
@@ -46,11 +46,11 @@ public class TesteLista {
 		L1.deletarUltimo();
 		System.out.println(L1.mostraLista());
 		
-		System.out.println(L1.buscarValor(0));*/
+		System.out.println(L1.buscarValor(0));
 		
 		
 		//----------------------- PILHA -----------------------------
-		
+		/*
 		Pilha pilha = new Pilha(3);
 		pilha.push(5);
 		pilha.push(7);
@@ -59,7 +59,7 @@ public class TesteLista {
 		
 		System.out.println("Topo = " + pilha.getTopo());
 		pilha.pop();
-		System.out.println("Topo = " + pilha.getTopo());
+		System.out.println("Topo = " + pilha.getTopo());*/
  	}
 	
 }

@@ -45,4 +45,7 @@ public class Pilha {
 	public int getTopo() {
 		return topo.getDado();
 	}
+	
+	
+	
 }
