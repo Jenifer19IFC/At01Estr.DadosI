@@ -3,7 +3,7 @@ package listasLineares;
 public class ListaEncadeada {
 
 	private Nodo inicio;
-	private Nodo fim;
+
 	
 	public ListaEncadeada(int dado) {
 		inicio = new Nodo(dado); //THIS caso tenha outra variável dado dentro desta classe

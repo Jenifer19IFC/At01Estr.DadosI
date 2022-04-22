@@ -1,12 +1,12 @@
 package atividades;
 
-public class Nodo {
+public class NodoDE {
 
 	private int dado;
-	private Nodo prox;
-	private Nodo ant;
+	private NodoDE prox;
+	private NodoDE ant;
 	
-	public Nodo(int dado) {
+	public NodoDE(int dado) {
 		this.dado = dado;
 		prox = null;
 		ant = null;
@@ -16,19 +16,19 @@ public class Nodo {
 		return dado;
 	}
 
-	public Nodo getProx() {
+	public NodoDE getProx() {
 		return prox;
 	}
 
-	public void setProx(Nodo prox) {
+	public void setProx(NodoDE prox) {
 		this.prox = prox;
 	}
 
-	public Nodo getAnt() {
+	public NodoDE getAnt() {
 		return ant;
 	}
 
-	public void setAnt(Nodo ant) {
+	public void setAnt(NodoDE ant) {
 		this.ant = ant;
 	}
 }
